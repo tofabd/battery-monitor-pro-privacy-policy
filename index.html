@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy – Battery Monitor Pro</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 860px; margin: 0 auto; padding: 28px 22px 64px; line-height: 1.55; color: #1b1f23; background: #fafafa; }
+    h1,h2,h3 { line-height: 1.25; color:#111; }
+    h1 { margin-top: 0; }
+    code { background:#f1f3f5; padding:2px 5px; border-radius:4px; font-size:90%; }
+    a { color:#0b57d0; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    ul { margin:0 0 1em 1.2em; }
+    .meta { font-size: 0.95em; color:#444; margin: 4px 0 28px; }
+    .badge { display:inline-block; background:#e0ecff; padding:4px 10px; border-radius:16px; font-size:12px; margin:0 0 12px; letter-spacing:.5px; font-weight:600; color:#174ea6; }
+    hr { border:0; border-top:1px solid #e2e6ea; margin:32px 0; }
+    footer { margin-top:48px; font-size:0.85em; color:#555; }
+    .highlight { background:#d4edda; padding:12px; border-left:4px solid #28a745; margin:16px 0; border-radius:4px; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy – Battery Monitor Pro</h1>
+  <p class="meta">Effective Date: October 11, 2025 &nbsp;|&nbsp; Last Updated: October 11, 2025</p>
+
+  <h2>1. Introduction</h2>
+  <p>Battery Monitor Pro ("we", "our", or "the app") respects your privacy. This policy explains what information the Android app accesses, how it is used, and the limited circumstances under which information may be shared. We designed the app to function entirely on your device without transmitting your battery statistics or history to any servers.</p>
+
+  <h2>2. Summary at a Glance</h2>
+  <ul>
+    <li>No account, login, or personal identity collected.</li>
+    <li>No app usage analytics, crash analytics, or custom tracking SDKs.</li>
+    <li>Battery / performance metrics processed locally only.</li>
+    <li><strong>100% Ad-Free – No advertising networks integrated.</strong></li>
+    <li>You can clear history in-app or uninstall to remove all local data.</li>
+  </ul>
+
+  <h2>3. Information the App Processes (Device-Local)</h2>
+  <p><strong>Collected/Read Locally for Display & Functionality Only:</strong></p>
+  <ul>
+    <li>Battery level, status (charging / discharging / full), health, temperature, voltage, plug source (AC / USB / Wireless).</li>
+    <li>Approximate instantaneous charging/discharging current (mA) derived from system battery properties.</li>
+    <li>CPU temperature (when available via system thermal file) and available RAM snapshot.</li>
+    <li>Charging session timing (start time, end time, duration, level change) stored as "history" entries.</li>
+  </ul>
+  <p>This information never leaves your device. It is not transmitted to any server controlled by us.</p>
+
+  <h2>4. What We Do <em>Not</em> Collect</h2>
+  <ul>
+    <li>No name, email, address, phone, contacts, calendar, photos, media, files, messages, or precise location.</li>
+    <li>No background app usage patterns outside the metrics listed above.</li>
+    <li>No biometric, health, or other sensitive personal data.</li>
+    <li>No advertising identifiers or tracking data.</li>
+  </ul>
+
+  <h2>5. How Information Is Used Locally</h2>
+  <ul>
+    <li>To display real-time battery and charging statistics.</li>
+    <li>To generate on-device graphs with multiple time intervals (1 minute, 10 minutes, 60 minutes, 120 minutes).</li>
+    <li>To show recent session summaries and history.</li>
+    <li>To show a persistent foreground notification with current metrics (if enabled).</li>
+  </ul>
+  <p>We do <strong>not</strong> sell, rent, or otherwise share any user data.</p>
+
+  <h2>6. Local Storage & Retention</h2>
+  <ul>
+    <li>Charging session history is stored in a local SQLite database and limited (approximately the most recent 199 entries based on query logic).</li>
+    <li>Temporary session state is stored in SharedPreferences.</li>
+    <li>All locally stored data is deleted if you use the in-app reset/delete option or uninstall the app.</li>
+  </ul>
+
+  <h2>7. No Advertising</h2>
+  <p><strong>Battery Monitor Pro is completely ad-free.</strong> Unlike the free version, this Pro version does not integrate any advertising networks (including Google AdMob). No advertising identifiers are collected, and no ad-related permissions are required.</p>
+
+  <h2>8. Foreground Service & Notification</h2>
+  <p>The app runs a foreground service to update battery statistics continuously and keep the notification active. This service does not transmit data externally; it only reads system battery APIs locally.</p>
+
+  <h2>9. Permissions Used</h2>
+  <ul>
+    <li><code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code>: Used to open external links (e.g., Play Store for rating/sharing the app, developer page). No user data is transmitted to our servers.</li>
+    <li><code>POST_NOTIFICATIONS</code>: To show optional battery status notifications (Android 13+ runtime permission).</li>
+    <li><code>RECEIVE_BOOT_COMPLETED</code>: To restart monitoring and restore notification after device reboot.</li>
+    <li><code>FOREGROUND_SERVICE</code> / <code>FOREGROUND_SERVICE_SPECIAL_USE</code>: To keep the monitoring service active with a persistent notification.</li>
+  </ul>
+
+  <h2>10. Security</h2>
+  <ul>
+    <li>All data remains within Android's standard app sandbox.</li>
+    <li>No custom remote storage or transmission to third-party servers.</li>
+    <li>Zero external dependencies for analytics, advertising, or tracking.</li>
+    <li>We do not implement additional encryption layers for local battery data because it is non-personal and confined on-device.</li>
+  </ul>
+
+  <h2>11. User Controls</h2>
+  <ul>
+    <li>Disable or change notification permissions in Android system settings.</li>
+    <li>Use the in-app reset/delete history option to clear session records.</li>
+    <li>Uninstall the app to remove all remaining local data.</li>
+  </ul>
+
+  <h2>12. Children's Privacy</h2>
+  <p>The app is not directed to children under 13. We do not knowingly collect personal data from children. If you believe a child has provided personal information, contact us to request deletion (though the app does not require such data).</p>
+
+  <h2>13. International & Legal Disclosures</h2>
+  <ul>
+    <li>No "sale" or "sharing" of personal information as defined in US state privacy laws.</li>
+    <li>No cross-border transfers, since no personal data is stored remotely.</li>
+  </ul>
+
+  <h2>14. Third Parties</h2>
+  <ul>
+    <li><strong>Zero external dependencies</strong> – No advertising networks, analytics SDKs, crash reporting, social, or tracking services are integrated.</li>
+  </ul>
+
+  <h2>15. Changes to This Policy</h2>
+  <p>We may update this policy to reflect feature changes or legal requirements. The "Last Updated" date will change upon revision. Material changes affecting user rights will be highlighted in release notes where practical.</p>
+
+  <h2>16. Contact</h2>
+  <p>Questions or requests: <strong>tofa.du@gmail.com</strong></p>
+
+  <p>This Privacy Policy is hosted on GitHub Pages. For their data collection details, see the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener">GitHub Privacy Statement</a> and <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#data-collection" target="_blank" rel="noopener">GitHub Pages Data Collection</a>.</p>
+
+  <hr />
+  <footer>
+    <p>Battery Monitor Pro – Privacy Policy. This document is provided for transparency and does not create contractual obligations beyond applicable law.</p>
+  </footer>
+</body>
+</html>
